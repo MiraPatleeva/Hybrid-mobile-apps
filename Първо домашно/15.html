@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>15th exercise</title>
+</head>
+
+<body>
+  <script>
+    
+    function maxNum(arr) {
+      let max = arr[0];
+    for(var i = 0; i < arr.length-1; i++) {
+       if(max < arr[i+1]){
+        max = arr[i+1];
+       }
+    }
+    return max;
+}
+var arr = [-5,-3,-3]
+var biggestNumber = maxNum(arr);
+console.log(biggestNumber);
+    
+
+
+  </script>
+</body>
+
+</html>

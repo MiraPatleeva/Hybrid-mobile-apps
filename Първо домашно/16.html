@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>16th exercise</title>
+</head>
+
+<body>
+  <script>
+    
+    function Calc(arr) {
+      let n1 = Number(arr[0]);
+      let n2 = Number(arr[1]);
+      let res = undefined;
+      if(arr[2] == '*'){
+         res = n1 * n2;
+      }
+      else if(arr[2] == '+'){
+         res = n1 + n2;
+      }
+      else if(arr[2] == '/'){
+         res = n1 / n2;
+      }
+      else if(arr[2] == '-'){
+         res = n1 - n2;
+      }
+      
+    return res;
+}
+var arr = ['18','-1','+']
+var calc = Calc(arr);
+console.log(calc);
+    
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>7th exercise</title>
+</head>
+
+<body>
+  <script>
+   
+    function distance(arr) {
+      const p1 = {
+        x1: Number(arr[0]),
+        y1: Number(arr[1])
+      }
+
+      const p2 = {
+        x2: Number(arr[2]),
+        y2: Number(arr[3])
+      }
+
+      let d = Math.sqrt(Math.pow((p2.x2 - p1.x1), 2) + Math.pow((p2.y2 - p1.y1), 2));
+      console.log(d);
+    }
+    let arr = ['0','0','3','4'];
+    distance(arr);
+
+  </script>
+</body>
+
+</html>

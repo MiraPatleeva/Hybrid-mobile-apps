@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>17th exercise</title>
+</head>
+
+<body>
+  <script>
+    
+    function BigWords(s) {
+       s = s.toUpperCase();
+      s = s.replace(/"/g, "");
+s = s.replace(/\?/g, "");
+s = s.replace(/,/g, "");
+s = s.replace(/!/g, "");
+s = s.replace(/\./g, "");
+s = s.replace(/;/g, "");
+s = s.replace(/'/g, "");
+s = s.replace(/\[/g, "");
+s = s.replace(/\]/g, "");
+let arr = s.split(" ").toString();
+      
+    return arr;
+}
+let s = "Hi, how are you?";
+var bigwords = BigWords(s);
+console.log(bigwords);
+    
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>4th exercise</title>
+</head>
+
+<body>
+  <script>
+    
+   
+    function calcArea(sizes) {
+      let area = 0;
+      let w = Number(sizes[0]);
+      let h = Number(sizes[1]);
+      let W = Number(sizes[2]);
+      let H = Number(sizes[3]);
+
+      if ((w >= W) && (h >= H)) {
+        area = w * h;
+      }
+      else if ((W >= w) && (H >= h)) {
+        area = W * H;
+      }
+      else if ((W > w) && (h > H)) {
+        area = ((W - w) * H) + (w * h);
+      }
+      else if ((w > W) && (H > h)) {
+        area = ((w - W) * h) + (H * W)
+      }
+      console.log(area);
+      return area;
+    }
+    let sizes = ['2','2','2','2']
+    let res = calcArea(sizes);
+
+
+  </script>
+</body>
+
+</html>

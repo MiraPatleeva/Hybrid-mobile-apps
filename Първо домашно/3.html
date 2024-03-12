@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>3rd exercise</title>
+</head>
+
+<body>
+  <script>
+  
+   
+    function countletters(arr) {
+      let count = 0;
+      let word = arr[0];
+      let letter = arr[1];
+
+      for (let i = 0; i < word.length; i++) {
+        if (word[i] == letter) {
+          count++;
+        }
+      }
+      console.log(count);
+      return count;
+    }
+    let arr = ['hello','l']
+    let res = countletters(arr);
+
+  </script>
+</body>
+
+</html>

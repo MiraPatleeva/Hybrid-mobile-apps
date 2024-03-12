@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>8th exercise</title>
+</head>
+
+<body>
+  <script>
+    
+
+    
+    function boxes(countBottles,bottlesPerBox) {
+      let sol = countBottles / bottlesPerBox;
+      if(bottlesPerBox == 0 || bottlesPerBox < 0 || countBottles < 0){
+        sol = "Error a box needs to contain at least 1 bottle!";
+      }
+      else if(sol % 10 != 0){
+        sol = Math.ceil(sol);
+      }
+      console.log(sol);
+    }
+    let countBottles = 21;
+    let bottlesPerBox = 4;
+    let res = boxes(countBottles,bottlesPerBox);
+
+
+
+  </script>
+</body>
+
+</html>
