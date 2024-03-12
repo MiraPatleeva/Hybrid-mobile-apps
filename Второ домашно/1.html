@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum Numbers</title>
+</head>
+<body>
+    <input type="text" id="n1"/>  +    <input type="text" id="n2" />  =    <input type="text" id="res"  />
+    <input type="button" id="button" />
+    <script>
+        function calc() {
+            let t1 = document.getElementById("n1");
+            let t2 = document.getElementById("n2");
+            let t3 = document.getElementById("res");
+            let btn = document.getElementById("button");
+            let sum = 0;
+    
 
+            btn.addEventListener("click", (e)=>{
+                sum = Number(t1.value) + Number(t2.value);
+                t3.value = sum.toString();
+            });
+
+        }
+        calc(); 
+    </script>
+</body>
